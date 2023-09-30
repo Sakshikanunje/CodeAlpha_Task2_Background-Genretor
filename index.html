@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Background Generator</h1>
+    <main>
+        <div class="color-picker">
+            <label for="input1">Choose Color 1 : </label>
+            <input type="color" id="input1">
+        </div>
+        <div class="color-picker">
+            <label for="input2">Choose Color 2 : </label>
+            <input type="color" id="input2">
+        </div>
+
+        <div class="grd-type">
+            <label>Gradient Type : </label>
+            <input type="radio" id="lineargradtype" value="linear" name="grdtype" checked>Linear 
+            <input type="radio" id="radialgradtype" value="radial" name="grdtype" >Radial 
+            <input type="radio" id="bothgradtype" value="both" name="grdtype">Both 
+        </div>
+
+        <div class="buttons">
+            <button id="generatebtn">Generate Button</button>
+            <button id="copybtn">Copy</button>
+        </div>
+
+        <div class="colorcode">
+            <p id="grdcode">linear-gradient(to right,#ffffff,#ffffff)</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Background Genearator</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
